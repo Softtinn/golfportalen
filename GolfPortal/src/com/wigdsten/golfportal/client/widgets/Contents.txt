@@ -1,0 +1,2 @@
+Här placerar vi våra egna widgets som ska in i klient-lagret.
+T.ex. en "TextBoxLabel" - en widget som innehåller både en textbox och en rubrik (samt kanske validering med?)

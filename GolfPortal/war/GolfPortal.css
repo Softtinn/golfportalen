@@ -1,0 +1,228 @@
+
+
+/** Add css rules here for your application. */
+
+body {
+	font-size: 12px;
+	background-color: #ffffff;
+}
+
+body *
+{
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color:#363534;
+}
+
+.menupanel{
+	background: url("images/menuBackground.jpg") repeat-y;
+	background-color:#ffffff;
+}
+
+.menuitem {
+	background: url("images/menuItemBackground.jpg") no-repeat;
+	width: 164px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.menuitem .menulabel {
+	font-weight: bold;
+	font-size: 13px;
+	padding-top: 8px;
+	color:#363534;
+	text-shadow: 1px 1px 1px #ffffff;
+	width:136px;
+}
+
+.menuitem-selected {
+	background: url("images/menuItemBackgroundSelected.jpg");
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.menuitem-icon {
+	width:18px;
+	padding-top: 7px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.menuitem-selected .menulabel {
+	color:#000000;
+	text-shadow: 0px 0px 0px #ffffff;
+}
+
+.footerpanel{
+	background-color:#363534;
+}
+
+.footerpanel .footerlabel {
+	padding-top:4px;
+	color:#ffffff;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.mainpanel{
+	background-color:#ffffff;
+	padding-left:40px;
+}
+
+.popupPanel {
+	background: url("images/popupHeaderBackground.jpg") repeat-x;
+	background-color:#f8f8f8;
+	border: solid #555555 1px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;   	
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+	-moz-box-shadow: 3px 3px 4px #000000;
+	-webkit-box-shadow: 3px 3px 4px #000000;
+	box-shadow: 3px 3px 4px #000000;
+	padding:6px;
+	padding-left:12px;    
+	padding-bottom:20px; 	
+	width:600px;
+}
+.popupPanel .h2
+{
+	margin-bottom:16px;
+}
+
+.centered{
+	text-align:center;
+}
+
+.logica-logo {
+	margin-left: 16px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 0px;
+}
+
+.pageHeaderImage {
+	margin-top: 16px;
+	margin-bottom: 24px;
+	position: relative;
+	left: -36px;	
+}
+
+.labeledTextBox {
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-right:22px;
+	display:inline-block;
+	vertical-align: bottom;
+}
+.horizontalPanel {
+	margin-bottom:12px;
+	display: block;
+
+}
+
+.h1{
+	font-weight: bold;
+	font-size: 60px;
+	color: #ececec;
+	margin-bottom:12px;	
+}
+
+.h2{
+	font-weight: normal;
+	font-size: 18px;
+	color: #363534;
+	margin-bottom:4px;	
+}
+
+input {
+	margin-bottom:0px;
+	margin-top:4px;
+	margin-right:4px;
+}
+
+.doubleTextBox {
+	width:346px;
+}
+
+.trippleTextBox {
+	width:533px;
+}
+
+
+.formRow {
+	margin-top:4px;
+	margin-bottom:10px;
+}
+
+div.dottedline {
+	display:block;
+	border-bottom:1px;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-style:dashed;
+	border-color:#d6d6d6;
+	background-color: white;
+	height:2px;
+	margin-bottom:10px;
+}
+
+div.floatbreaker
+{
+    float:none;
+    clear:both;
+}
+
+div.floatright {
+	float:right;
+}
+
+div.floatleft {
+	float:left;
+
+}
+.journalButton {
+	margin-right:10px;
+    background: url("visitorjournal/gwt/standard/images/hborder.png") repeat-x scroll 0 -27px transparent;
+    border: 1px outset #CCCCCC;
+    cursor: pointer;
+    font-size: small;
+    padding: 3px 5px;
+    text-decoration: none;	
+    color:#005BBB;  
+}
+.journalButton:hover {
+	border-color: #99CCFF #6699EE #6699EE #77AAFF;
+}
+
+.marginRight20 {
+	margin-right:20px;
+}
+
+input.combobox 
+{
+	background: none;
+	padding:2px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color:#363534;
+	background-color:#ffffff;
+}
+
+.textarea
+{
+	width: 600px;
+	height: 400px;
+}
+
+table.mainPanel
+{
+	width:750px;
+}
+
+.linkCell {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #005BBB;
+}

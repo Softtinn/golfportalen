@@ -1,0 +1,2 @@
+Här placerar vi alla sidor som utgör själva applikationen.
+Till alla nya pages lägger vi till "View" som surfix. Ex: Register -> RegisterView

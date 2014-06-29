@@ -1,0 +1,6 @@
+Öppna mysql query browser / mysql workbench.
+Klicka på File -> Open SQL Script
+Kör skriptet "create_db.sql".
+
+En applikations user (hibernate_user) skapas upp, samt en databas som vi kallar för golf_db. 
+I databsen skapas ett table, "test". Med denna kan vi labba hej-vilt.

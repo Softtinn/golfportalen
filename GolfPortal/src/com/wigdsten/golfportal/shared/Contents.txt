@@ -1,0 +1,1 @@
+Här placeras object som kan delas mellan client/server.

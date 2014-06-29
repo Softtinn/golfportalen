@@ -1,0 +1,2 @@
+Här placerar vi övriga resurser vi kan behöva till klient-lagret.
+T.ex. path till någon CSS-style eller i18Constants (förklarar vad dessa är senare)

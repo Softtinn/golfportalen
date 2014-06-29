@@ -1,0 +1,4 @@
+Här hamnar det vi måste sköta på server-sidan.
+T.ex. kommunikation till databas eller funktioner som exportering av PDF-rapport
+
+Anropen mellan klient/server måste specificeras i service/asyncService klasserna under mappen com.wigdsten.golfportal.client
