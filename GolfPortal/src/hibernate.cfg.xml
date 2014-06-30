@@ -15,7 +15,7 @@
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.current_session_context_class">thread</property>
 
-		<mapping class="com.wigdsten.golfportal.server.TestInfo"/>
+		<mapping class="com.wigdsten.golfportal.server.entities.TestInfo"/>
 
 	</session-factory>
 </hibernate-configuration>
