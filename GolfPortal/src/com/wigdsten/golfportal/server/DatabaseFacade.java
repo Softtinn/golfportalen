@@ -7,7 +7,7 @@ import org.hibernate.classic.Session;
 import com.wigdsten.golfportal.client.TestInfoDTO;
 import com.wigdsten.golfportal.server.entities.TestInfo;
 
-public class ConnectHibernate {
+public class DatabaseFacade {
 
 	public void storeData(TestInfoDTO testInfoDTO) {
 		TestInfo contact = new TestInfo(testInfoDTO);

@@ -12,7 +12,7 @@ public class GolfPortalServiceImpl extends RemoteServiceServlet implements
 
 	@Override
 	public void storeData(TestInfoDTO testInfoDTO) {
-		ConnectHibernate connection = new ConnectHibernate();
+		DatabaseFacade connection = new DatabaseFacade();
 
 		// Can't set random UUID on client-side
 		testInfoDTO.setId(UUID.randomUUID().toString());
