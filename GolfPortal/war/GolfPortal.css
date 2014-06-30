@@ -9,20 +9,22 @@ body {
 
 body *
 {
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: Calibri, Arial, sans-serif;
 	color:#363534;
 }
 
 .menupanel{
-	background: url("images/menuBackground.jpg") repeat-y;
-	background-color:#ffffff;
+	background-color:#E6E6E6;
+	box-shadow:inset -10px 0px 10px -7px rgba(0,0,0,0.5);
 }
 
 .menuitem {
-	background: url("images/menuItemBackground.jpg") no-repeat;
 	width: 250px;
 	height: 30px;
 	cursor: pointer;
+	border: 1px solid #8AB8E6;
+	box-shadow:inset -10px 0px 10px -7px rgba(0,0,0,0.5);
+	
 }
 
 .menuitem .menulabel {
@@ -36,7 +38,7 @@ body *
 }
 
 .menuitem-selected {
-	background: url("images/menuItemBackgroundSelected.jpg");
+	background-color: #99CCFF;
 	text-shadow: 1px 1px 1px #000000;
 }
 
@@ -96,13 +98,6 @@ body *
 	text-align:center;
 }
 
-.logica-logo {
-	margin-left: 16px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	border: 0px;
-}
-
 .pageHeaderImage {
 	margin-top: 16px;
 	margin-bottom: 24px;
@@ -126,7 +121,14 @@ body *
 .h1{
 	font-weight: bold;
 	font-size: 60px;
-	color: #ececec;
+	color: #6B8FB2;
+	margin-bottom:12px;	
+}
+
+.menuheader{
+	font-weight: bold;
+	font-size: 60px;
+	color: white;
 	margin-bottom:12px;	
 }
 

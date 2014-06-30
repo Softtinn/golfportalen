@@ -28,8 +28,7 @@ public class SandboxView extends Composite implements ClickHandler {
 	private final Button buttonExecute = new Button("Skicka information");
 	private final TextBox boxName = new TextBox();
 	private final TextBox boxGolfId = new TextBox();
-	private final Label labelHeader = new Label(
-			"Test: Kommunikation mot databasen");
+	private final Label labelHeader = new Label("Testsidan!");
 	private final Label labelName = new Label("Namn");
 	private final Label labelGolfId = new Label("Golf-Id");
 	private static final String NAME = "sandbox";
