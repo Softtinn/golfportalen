@@ -20,14 +20,15 @@ body *
 
 .menuitem {
 	background: url("images/menuItemBackground.jpg") no-repeat;
-	width: 164px;
+	width: 250px;
 	height: 30px;
 	cursor: pointer;
 }
 
 .menuitem .menulabel {
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 12px;
+	color: white;
 	padding-top: 8px;
 	color:#363534;
 	text-shadow: 1px 1px 1px #ffffff;
@@ -47,8 +48,8 @@ body *
 }
 
 .menuitem-selected .menulabel {
-	color:#000000;
-	text-shadow: 0px 0px 0px #ffffff;
+	color: white;
+	text-shadow: 1px 1px 1px #000000;
 }
 
 .footerpanel{
