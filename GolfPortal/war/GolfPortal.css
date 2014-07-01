@@ -132,6 +132,10 @@ body *
 	margin-bottom:12px;	
 }
 
+.loading{
+	border: none;
+}
+
 .h2{
 	font-weight: normal;
 	font-size: 18px;

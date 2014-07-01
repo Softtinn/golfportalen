@@ -13,6 +13,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 import com.wigdsten.golfportal.client.GolfPortalService;
 import com.wigdsten.golfportal.client.GolfPortalServiceAsync;
 import com.wigdsten.golfportal.client.TestInfoDTO;
+import com.wigdsten.golfportal.client.widgets.LoadingWidget;
 
 public class SandboxView extends Composite implements ClickHandler {
 
@@ -31,6 +32,7 @@ public class SandboxView extends Composite implements ClickHandler {
 	private final Label labelHeader = new Label("Testsidan!");
 	private final Label labelName = new Label("Namn");
 	private final Label labelGolfId = new Label("Golf-Id");
+	private final LoadingWidget loading = new LoadingWidget();
 	private static final String NAME = "sandbox";
 
 	public SandboxView() {
@@ -42,6 +44,7 @@ public class SandboxView extends Composite implements ClickHandler {
 		this.panel.add(this.labelName);
 		this.panel.add(this.boxName);
 		this.panel.add(this.buttonExecute);
+		this.loading.hide();
 		initWidget(this.panel);
 	}
 
@@ -76,10 +79,12 @@ public class SandboxView extends Composite implements ClickHandler {
 		// Detta för att vi inte kan skapa ett unikt UUID på klientsidan (det
 		// går inte att översätta det till javaskript).
 
+		this.loading.show();
 		this.remoteService.storeData(testInfoDTO, new AsyncCallback<Void>() {
 
 			@Override
 			public void onSuccess(Void result) {
+				SandboxView.this.loading.hide();
 				Window.alert("Spelaren är nu sparad i databasen!");
 				SandboxView.this.boxGolfId.setText("");
 				SandboxView.this.boxName.setText("");
@@ -87,6 +92,7 @@ public class SandboxView extends Composite implements ClickHandler {
 
 			@Override
 			public void onFailure(Throwable caught) {
+				SandboxView.this.loading.hide();
 				Window.alert("Följande fel uppstod: " + caught);
 			}
 		});
