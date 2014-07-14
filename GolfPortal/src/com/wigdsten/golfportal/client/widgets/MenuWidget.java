@@ -11,6 +11,7 @@ import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.wigdsten.golfportal.client.structure.MainPanel;
+import com.wigdsten.golfportal.client.ui.RegisterRoundView;
 import com.wigdsten.golfportal.client.ui.SandboxView;
 
 public class MenuWidget extends Composite implements ClickHandler {
@@ -22,6 +23,7 @@ public class MenuWidget extends Composite implements ClickHandler {
 	private final Label labelHeader = new Label("Meny");
 	private final SimplePanel mainPanel;
 	private final MenuItem itemSandbox;
+	private final MenuItem itemRegisterRound;
 
 	public MenuWidget(MainPanel mainPanel) {
 		this.mainPanel = mainPanel;
@@ -42,6 +44,13 @@ public class MenuWidget extends Composite implements ClickHandler {
 				"/images/Icons(16x16)/Toolbox.png"), new Label("Sandbox sidan"));
 		this.itemSandbox.addClickHandler(this);
 		this.flowPanel.add(this.itemSandbox);
+
+		this.itemRegisterRound = new MenuItem(new Image(
+				"/images/Icons(16x16)/Create.png"), new Label(
+				"Registrera runda"));
+		this.itemRegisterRound.addClickHandler(this);
+		this.flowPanel.add(this.itemRegisterRound);
+
 		initWidget(this.flowPanel);
 	}
 
@@ -50,7 +59,11 @@ public class MenuWidget extends Composite implements ClickHandler {
 		Object source = event.getSource();
 		if (source.equals(this.itemSandbox)) {
 			SandboxView sandboxView = new SandboxView();
-			this.mainPanel.add(sandboxView);
+			this.mainPanel.setWidget(sandboxView);
+		}
+		if (source.equals(this.itemRegisterRound)) {
+			RegisterRoundView registerRoundView = new RegisterRoundView();
+			this.mainPanel.setWidget(registerRoundView);
 		}
 
 	}

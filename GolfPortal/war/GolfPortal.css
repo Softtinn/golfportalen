@@ -223,6 +223,10 @@ input.combobox
 	height: 400px;
 }
 
+.textBoxImage {
+	vertical-align: middle;
+}
+
 table.mainPanel
 {
 	width:750px;
